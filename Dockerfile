@@ -20,5 +20,8 @@ COPY . /olympics_app/
 # Expose the port that the app will run on (change it if needed)
 EXPOSE 8501
 
+# Define environment variable
+ENV STREAMLIT_SERVER_PORT=8501
+
 # Define the command to run your Streamlit app
 CMD ["streamlit", "run", "app.py"]
