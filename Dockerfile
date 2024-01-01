@@ -6,16 +6,16 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Create and set the working directory in the container
-WORKDIR /app
+WORKDIR /olympics_app
 
 # Copy the requirements file into the container at /app
-COPY requirements.txt /app/
+COPY requirements.txt /olympics_app/
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the current directory contents into the container at /app
-COPY . /app/
+COPY . /olympics_app/
 
 # Expose the port that the app will run on (change it if needed)
 EXPOSE 8501
