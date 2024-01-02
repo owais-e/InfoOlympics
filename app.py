@@ -141,5 +141,3 @@ if user_menu == 'Athlete-wise Analysis':
 
     data = helper.athlete_wise_analysis_func(df,  selected_sports, selected_athlete)
     st.table(data)
-
-
