@@ -8,7 +8,6 @@ ENV PYTHONUNBUFFERED 1
 # Create and set the working directory in the container
 WORKDIR /app
 
-
 # Copy the requirements file into the container at /app
 COPY requirements.txt /app/
 
